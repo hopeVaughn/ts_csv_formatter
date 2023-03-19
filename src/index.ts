@@ -2,10 +2,7 @@ import { CsvFileReader } from "./CsvFileReader";
 import { MatchResult } from "./MatchResult";
 const reader = new CsvFileReader('football.csv')
 reader.read();
-
-console.log(reader.data);
-
-
+console.log(reader.data[0][2]);
 
 let manUnitedWins = 0;
 
